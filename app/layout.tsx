@@ -4,7 +4,7 @@ import "./site.css";
 export const metadata: Metadata = {
   title: "Fine Objects | Trade Wall Art & Decorative Objects",
   description:
-    "Fine Objects supplies textured wall art and decorative objects for interior designers, hospitality groups, art advisors, developers, and commercial interior projects."
+    "Fine Objects supplies retail-ready wall art and decorative objects for national retailers, home furnishing chains, warehouse clubs, off-price groups, wholesalers, and import programs."
 };
 
 export default function RootLayout({

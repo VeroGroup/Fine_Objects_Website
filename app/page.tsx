@@ -5,7 +5,7 @@ const productSeries = [
     image: "/images/catalog/rp-texture.jpg",
     alt: "Close-up textured 3D reproduction print surface",
     body:
-      "Not a flat print. A textured reproduction. 3D reproduction prints that recreate color, surface depth, and brushstroke relief for project-scale art programs.",
+      "Not a flat print. A textured reproduction that recreates color, surface depth, and brushstroke relief for retail collections and volume programs.",
     note: "Custom sizing / Up to 6 mm relief"
   },
   {
@@ -14,7 +14,7 @@ const productSeries = [
     image: "/images/catalog/laminated-interior.jpg",
     alt: "Laminated layered art installed above a warm interior sofa",
     body:
-      "Dimensional layered compositions for refined residential, hospitality, and commercial interiors.",
+      "Dimensional layered compositions designed to bring depth and distinction to home decor assortments.",
     note: "Dimensional layers / Project ready"
   },
   {
@@ -39,9 +39,9 @@ const productSeries = [
 
 const reasons = [
   {
-    title: "Project-Ready Specification",
+    title: "Retail-Ready Programs",
     body:
-      "Products are organized by series, size, price, MOQ, and packaging details to support trade evaluation and procurement."
+      "Products are organized by series, size, price, MOQ, and packaging details to support buyer review and assortment planning."
   },
   {
     title: "Tactile Materials",
@@ -49,65 +49,66 @@ const reasons = [
       "From textured reproduction prints to layered, natural fiber, wood veneer, and metal artworks, each series is selected for visual and material presence."
   },
   {
-    title: "Built for Trade Buyers",
+    title: "Built for Volume Buyers",
     body:
-      "Designed for designers, art advisors, hospitality groups, developers, and commercial buyers sourcing for real projects."
+      "Designed for national retailers, home furnishing chains, warehouse clubs, off-price groups, wholesalers, and import programs."
   },
   {
-    title: "Customization Available",
+    title: "Custom Product Development",
     body:
-      "Selected products can be adjusted by size, substrate, finish, framing, or packaging requirements depending on project needs."
+      "Selected products can be adapted by size, substrate, finish, framing, price point, packaging, or exclusive assortment needs."
   }
 ];
 
 const applications = [
   {
-    name: "Hospitality",
+    name: "Mass Retail",
     image: "/images/catalog/laminated-interior.jpg"
   },
   {
-    name: "Residential",
+    name: "Home Furnishings",
     image: "/images/catalog/hero-wall-art.jpg"
   },
   {
-    name: "Art Advisors",
+    name: "Warehouse Clubs",
     image: "/images/catalog/rp-gallery.jpg"
   },
   {
-    name: "Commercial Interiors",
+    name: "Off-Price Retail",
     image: "/images/catalog/natural-fiber-interior.jpg"
   }
 ];
 
 const processSteps = [
   {
-    title: "Select Series",
+    title: "Build an Assortment",
     body:
-      "Choose from FO-RP, FO-LL, FO-WF, or FO-MA based on project style and application."
+      "Choose from FO-RP, FO-LL, FO-WF, or FO-MA based on your customer, channel, and target retail price."
   },
   {
-    title: "Confirm Specification",
+    title: "Refine Product & Packaging",
     body:
-      "Review size, substrate, finish, packaging, and quantity requirements."
+      "Confirm size, substrate, finish, framing, labeling, packaging, and compliance requirements."
   },
   {
-    title: "Request Quote",
+    title: "Confirm Volume & Pricing",
     body:
-      "Send product codes, quantity, destination, and timeline."
+      "Align product codes, order quantity, destination, price targets, and delivery windows."
   },
   {
-    title: "Production & Packaging",
+    title: "Production, QC & Delivery",
     body:
-      "We confirm production details, packaging dimensions, and delivery requirements before manufacturing."
+      "We manage production details, quality control, retail packaging, and shipment preparation."
   }
 ];
 
 const projectTypes = [
-  "Interior Design",
-  "Hospitality",
-  "Art Advisory",
-  "Development",
-  "Commercial Interiors",
+  "Mass Retail",
+  "Home Furnishings Retail",
+  "Warehouse Club",
+  "Off-Price Retail",
+  "Wholesale / Import",
+  "Hospitality / Contract",
   "Other"
 ];
 
@@ -122,14 +123,15 @@ export default function Home() {
       >
         <div className="flex min-h-[500px] flex-col justify-center border-y border-line py-10 lg:min-h-[620px]">
           <p className="mb-6 text-xs uppercase tracking-[0.24em] text-bronze">
-            Trade wall art and decorative objects
+            Trade wall art for retail and wholesale
           </p>
           <h1 className="max-w-3xl font-display text-[3rem] leading-[0.98] tracking-normal text-ink sm:text-[4rem] lg:text-[4.4rem]">
-            Textured Wall Art for Distinctive Interiors
+            Distinctive Wall Art for Retail at Scale
           </h1>
           <p className="mt-6 max-w-xl text-base leading-7 text-muted sm:text-lg">
-            Project-ready wall art and decorative objects for designers,
-            hospitality groups, art advisors, and commercial interiors.
+            Retail-ready wall art and decorative objects for national
+            retailers, home furnishing chains, warehouse clubs, and off-price
+            channels.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <a className="button button-primary" href="#series">
@@ -164,8 +166,8 @@ export default function Home() {
               </h2>
             </div>
             <p className="max-w-2xl text-base leading-7 text-muted lg:justify-self-end">
-              Four focused product families for trade buyers, interior
-              projects, and project-scale specification.
+              Four focused product families for retail assortment planning,
+              wholesale programs, and high-volume orders.
             </p>
           </div>
           <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
@@ -208,10 +210,10 @@ export default function Home() {
             </h2>
           </div>
           <p className="max-w-4xl font-display text-2xl leading-[1.2] text-ink sm:text-3xl lg:text-[2.5rem]">
-            To become a distinctive source for warm, artful, and
-            character-rich decorative objects - helping designers, hospitality
-            groups, and interior projects create spaces that feel alive,
-            personal, and visually memorable.
+            To become a trusted global source for distinctive, commercially
+            viable wall art and decorative objects - helping retail partners
+            build differentiated assortments through strong value, reliable
+            scale, and consistent execution.
           </p>
         </div>
       </section>
@@ -250,13 +252,15 @@ export default function Home() {
         <div className="mx-auto max-w-[1440px]">
           <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
             <div>
-              <p className="eyebrow">Applications</p>
+              <p className="eyebrow">Retail Channels</p>
               <h2 className="section-title">
-                Designed for Spaces That Need Character
+                Built for Retail Programs at Scale
               </h2>
               <p className="section-copy">
-                Fine Objects supports spaces where decoration should feel
-                intentional, warm, and memorable - not generic.
+                From national chains and warehouse clubs to premium home
+                furnishings and off-price channels, Fine Objects supports
+                buyers with clear assortments, volume pricing, and retail-ready
+                packaging.
               </p>
             </div>
             <div className="grid gap-4 sm:grid-cols-2">
@@ -268,7 +272,7 @@ export default function Home() {
                   <div className="aspect-[4/3] overflow-hidden">
                     <img
                       src={application.image}
-                      alt={`${application.name} interior application`}
+                      alt={`${application.name} wall art category`}
                       className="fine-image h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]"
                       style={{
                         objectPosition:
@@ -360,8 +364,8 @@ export default function Home() {
             <p className="eyebrow">Contact</p>
             <h2 className="section-title">Request Trade Pricing</h2>
             <p className="section-copy">
-              For designers, art advisors, hospitality groups, developers, and
-              commercial buyers.
+              For retail buyers, merchandising teams, wholesalers, importers,
+              and high-volume trade programs.
             </p>
             <div className="mt-10 border-t border-line pt-7 text-sm leading-7 text-muted">
               <p>
@@ -389,7 +393,7 @@ export default function Home() {
               <Field label="Company" name="company" />
               <Field label="Email" name="email" type="email" />
               <label className="field">
-                <span>Project Type</span>
+                <span>Retail Channel</span>
                 <select name="project-type">
                   {projectTypes.map((type) => (
                     <option key={type}>{type}</option>
@@ -471,7 +475,7 @@ function Footer() {
     <footer className="border-t border-line px-5 py-8 sm:px-8 lg:px-12">
       <div className="mx-auto flex max-w-[1440px] flex-col justify-between gap-4 text-sm text-muted sm:flex-row">
         <p className="font-display text-2xl text-ink">Fine Objects</p>
-        <p>Trade wall art and decorative objects for interior projects.</p>
+        <p>Wall art and decorative objects for retail and wholesale programs.</p>
       </div>
     </footer>
   );
